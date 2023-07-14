@@ -29,7 +29,7 @@ export PROJHOME=`pwd`
   git submodule update
 
 # Build source tarball
-  cd src.submodule/trunk
+  cd src/submodule
   export DEST=$PROJHOME/build/axel\-$1
   mkdir -p $DEST
   cp -R * $DEST
@@ -43,7 +43,7 @@ export PROJHOME=`pwd`
   rm -rf $PROJHOME/build
 
 # Compile source
-  cd src.submodule/trunk
+  cd src/submodule
   mkdir -p $PROJHOME/build/usr/share/doc
 
   make clean
